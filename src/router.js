@@ -1,23 +1,25 @@
-const express = require('express');
-const jwt = require('jsonwebtoken');
+const express = require("express");
+const jwt = require("jsonwebtoken");
 
 const router = express.Router();
 
 const mockUser = {
-    username: 'authguy',
-    password: 'mypassword',
+    username: "authguy",
+    password: "mypassword",
     profile: {
-        firstName: 'Chris',
-        lastName: 'Wolstenholme',
-        age: 43
+        firstName: 'Toby',
+        lastName: 'Carlo',
+        age: 19
     }
 };
 
-router.post('/login', (req, res) => {
+const secret = "secret12345"
+
+router.post("/login", (req, res) => {
 
 });
 
-router.get('/profile', (req, res) => {
+router.get("/profile", (req, res) => {
   
 });
 
